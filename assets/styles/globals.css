@@ -110,3 +110,26 @@ html.dark .upload-field .text-white {
 .upload-field .text-white {
   color: #000 !important;
 }
+
+/* Carousel banner styles for consistent sizing */
+.banner-carousel-container {
+  aspect-ratio: 16/9;
+  max-height: 600px;
+  min-height: 400px;
+}
+
+@media (max-width: 768px) {
+  .banner-carousel-container {
+    aspect-ratio: 4/3;
+    min-height: 300px;
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 640px) {
+  .banner-carousel-container {
+    aspect-ratio: 1/1;
+    min-height: 250px;
+    max-height: 350px;
+  }
+}
