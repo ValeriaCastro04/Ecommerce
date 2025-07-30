@@ -1,4 +1,5 @@
-const sampleData = {
+// BACKUP - Datos originales con rutas locales
+const originalSampleData = {
   users: [
     {
       name: 'John',
@@ -20,7 +21,7 @@ const sampleData = {
       category: "Men's Dress Shirts",
       description: 'Classic Polo style with modern comfort',
       images: [
-        'https://www.allaboutbirds.org/guide/assets/photo/308743051-1900px.jpg',
+        '/images/sample-products/p1-1.jpg',
         '/images/sample-products/p1-2.jpg',
       ],
       price: 59.99,
@@ -52,7 +53,7 @@ const sampleData = {
       name: 'Tommy Hilfiger Classic Fit Dress Shirt',
       slug: 'tommy-hilfiger-classic-fit-dress-shirt',
       category: "Men's Dress Shirts",
-      description: 'A perfect blend of sophistication and comfort',
+      description: 'A perfect blend of sophistication and comfnullort',
       images: [
         '/images/sample-products/p3-1.jpg',
         '/images/sample-products/p3-2.jpg',
@@ -119,4 +120,4 @@ const sampleData = {
   ],
 };
 
-export default sampleData;
+export default originalSampleData;

@@ -12,10 +12,12 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "email": "cp .env ./node_modules/react-email && email dev --dir email --port 3001",
-    "db:seed": "tsx db/seed.ts"
+    "db:seed": "tsx db/seed.ts",
+    "db:update-images": "node db/update-images.js",
+    "db:restore-backup": "node db/update-images.js restore"
   },
   "prisma": {
-    "seed": "tsx db/seed.ts"
+    "seed": "node --loader ts-node/esm db/seed.ts"
   },
   "dependencies": {
     "@auth/core": "0.37.4",
