@@ -15,7 +15,10 @@
     "db:seed": "tsx db/seed.ts",
     "db:update-images": "node db/update-images.js",
     "db:restore-backup": "node db/update-images.js restore",
-    "db:update-banners": "tsx db/update-banners.ts"
+    "db:update-banners": "tsx db/update-banners.ts",
+    "db:fix-banners": "tsx db/fix-banners.ts",
+    "db:fix-specific-banners": "tsx db/fix-specific-banners.ts",
+    "clear-cache": "node scripts/clear-cache.js"
   },
   "prisma": {
     "seed": "node --loader ts-node/esm db/seed.ts"
