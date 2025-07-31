@@ -28,7 +28,26 @@ const nextConfig: NextConfig = {
         hostname: 'www.allaboutbirds.org',
         port: '',
       },
+      {
+        protocol: 'https',
+        hostname: 'd1flfk77wl2xk4.cloudfront.net',
+        port: '',
+      },
+      // Dominios comunes de CDN
+      {
+        protocol: 'https',
+        hostname: '*.cloudfront.net',
+        port: '',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.amazonaws.com',
+        port: '',
+      },
     ],
+    // Configuración adicional para desarrollo
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
   // Configuración para mejor rendimiento en producción
   poweredByHeader: false,
