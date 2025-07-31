@@ -28,13 +28,14 @@ const nextConfig: NextConfig = {
         hostname: 'www.allaboutbirds.org',
         port: '',
       },
-      // Agrega más dominios según necesites
-      {
-        protocol: 'https',
-        hostname: '*', // ⚠️ Solo para desarrollo, en producción especifica dominios exactos
-        port: '',
-      },
     ],
+  },
+  // Configuración para mejor rendimiento en producción
+  poweredByHeader: false,
+  compress: true,
+  // Optimización para Vercel
+  experimental: {
+    optimizePackageImports: ['@radix-ui/react-icons'],
   },
 };
 
