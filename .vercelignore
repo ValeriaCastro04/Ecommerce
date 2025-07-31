@@ -1,0 +1,19 @@
+# Archivos de scripts que no necesita Vercel
+tools/
+scripts/
+*.md
+README.md
+.git/
+.gitignore
+.env.example
+.example-env
+
+# Archivos de desarrollo
+tsconfig.scripts.json
+jest.config.ts
+jest.setup.ts
+tests/
+
+# Archivos temporales
+.next/
+node_modules/

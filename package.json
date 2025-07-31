@@ -20,9 +20,9 @@
     "db:fix-specific-banners": "tsx db/fix-specific-banners.ts",
     "db:check-products": "tsx db/check-products.ts",
     "db:ensure-products": "tsx db/ensure-products.ts",
-    "db:full-diagnostic": "tsx db/full-diagnostic.ts",
-    "db:fix-complete": "tsx db/fix-complete.ts",
-    "db:fix-slugs": "tsx db/fix-slugs.ts",
+    "db:full-diagnostic": "tsx tools/full-diagnostic.ts",
+    "db:fix-complete": "tsx tools/fix-complete.ts",
+    "db:fix-slugs": "tsx tools/fix-slugs.ts",
     "clear-cache": "node scripts/clear-cache.js",
     "prepare-deployment": "node scripts/prepare-deployment.js"
   },

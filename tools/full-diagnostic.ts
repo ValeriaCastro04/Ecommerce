@@ -14,7 +14,7 @@ async function fullDiagnostic() {
       await prisma.$connect();
       console.log('✅ Conexión a la base de datos exitosa');
     } catch (error) {
-      console.log('❌ Error de conexión:', error.message);
+      console.log('❌ Error de conexión:', error instanceof Error ? error.message : String(error));
       return;
     }
 
@@ -143,7 +143,7 @@ async function fullDiagnostic() {
     }
 
   } catch (error) {
-    console.error('❌ Error en diagnóstico:', error);
+    console.error('❌ Error en diagnóstico:', error instanceof Error ? error.message : String(error));
   } finally {
     await prisma.$disconnect();
   }
